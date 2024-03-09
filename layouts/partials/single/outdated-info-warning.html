@@ -28,10 +28,10 @@
 		    </div>
 			<div class="details-content">
 				<div class="admonition-content">
-					{{- ".Params.outdatedInfoWarning.before" -}}
+					{{ .Params.outdatedInfoWarning.before }}
 					<span class="timeago" datetime="{{ dateFormat "2006-01-02T15:04:05" $updateTime }}" title="{{ dateFormat "January 2, 2006" $updateTime }}">
 					{{- dateFormat "January 2, 2006" $updateTime -}}
-					</span>{{ T ".Params.outdatedInfoWarning.after" -}}
+					</span>{{ .Params.outdatedInfoWarning.after }}
 				</div>
 			</div>
 		 </div>
