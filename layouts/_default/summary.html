@@ -37,6 +37,8 @@
             </span>
         {{- end -}}
 
+        <span>, </span>
+
         {{- with .Site.Params.dateFormat | default "2006-01-02" | .Lastmod.Format -}}
             &nbsp;<span class="post-publish">
                 {{- printf `<time datetime="%v">%v</time>` . . | dict "Date" | T "updatedOnDate" | safeHTML -}}, 
