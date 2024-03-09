@@ -1,6 +1,9 @@
 {{- if ne .Site.Params.footer.enable false -}}
     <footer class="footer">
         <div class="footer-container">
+            <div class="footer-line">
+                <span id="run-time"></span>
+            </div>            
             {{- /* Custom Content */ -}}
             {{- with .Site.Params.footer.custom -}}
                 <div class="footer-line">
